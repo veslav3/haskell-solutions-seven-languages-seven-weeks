@@ -4,10 +4,10 @@ module Main where
   colors = ["red", "green", "blue"]
   states = ["Alabama", "Mississippi", "Georgia", "Tennessee", "Florida"]
   adjacentStates = [("Tennessee", "Mississippi", "Georgia", "Alabama"),
-    ("Mississippi", "Tennessee", "Alabama", ""),
+    ("Mississippi", "Tennessee", "Alabama"),
     ("Alabama", "Mississippi", "Georgia", "Tennessee"),
     ("Georgia", "Tennessee", "Alabama", "Florida"),
-    ("Florida", "Georgia", "Alabama", "")]
+    ("Florida", "Georgia", "Alabama")]
   combined = [(x, y) | x <- states, y <- colors]
 
 
